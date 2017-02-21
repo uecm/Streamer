@@ -58,8 +58,6 @@
     }
 }
 
-
-
 -(void)checkIfOnlineByResponse:(NSDictionary*)response{
     
     bool online = [[response objectForKey:@"stream"] class] != [NSNull class];
@@ -127,8 +125,9 @@
     
     NSString *URL = [NSString stringWithFormat:@"twitch.tv/%@",currentChannel];
     NSString *OAuthToken = [NSString stringWithFormat:@"--twitch-oauth-token=%@",user.oauthToken];
-    [playTask setArguments:@[OAuthToken, URL, @"1080p60"]];
+    [playTask setArguments:@[OAuthToken, URL, @"best"]];
     [playTask launch];
+    [playTask resume];
     //[playTask waitUntilExit];
 }
 

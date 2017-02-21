@@ -119,6 +119,7 @@
         username(name, userID);
     }];
     [dataTask resume];
+    
 }
 
 - (void)saveUserWithToken:(NSString*)token name:(NSString*)name andUserID:(NSString*)userID{
@@ -140,7 +141,6 @@
     NSError *error;
     if(![managedObjectContext save:&error]){
         NSLog(@"Error with saving new user. \n%@",[error localizedDescription]);
-    
     }
 }
 

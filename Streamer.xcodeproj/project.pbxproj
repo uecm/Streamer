@@ -12,7 +12,7 @@
 		742A60E31E2E633C002CAD3B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 742A60E21E2E633C002CAD3B /* AppDelegate.m */; };
 		742A60E61E2E633C002CAD3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 742A60E51E2E633C002CAD3B /* main.m */; };
 		742A60E91E2E633C002CAD3B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 742A60E81E2E633C002CAD3B /* ViewController.m */; };
-		742A60EC1E2E633D002CAD3B /* StreamerAlpha.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 742A60EA1E2E633D002CAD3B /* StreamerAlpha.xcdatamodeld */; };
+		742A60EC1E2E633D002CAD3B /* Streamer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 742A60EA1E2E633D002CAD3B /* Streamer.xcdatamodeld */; };
 		742A60EE1E2E633D002CAD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742A60ED1E2E633D002CAD3B /* Assets.xcassets */; };
 		742A60F11E2E633D002CAD3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742A60EF1E2E633D002CAD3B /* Main.storyboard */; };
 		743FEA8A1E5B738600204B85 /* ImageValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 743FEA891E5B738600204B85 /* ImageValueTransformer.m */; };
@@ -27,13 +27,13 @@
 		74282D4D1E364CCE00DA923F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		74282D4F1E364EF000DA923F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		74282D501E364EF000DA923F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		742A60DE1E2E633C002CAD3B /* StreamerAlpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamerAlpha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		742A60DE1E2E633C002CAD3B /* Streamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		742A60E11E2E633C002CAD3B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		742A60E21E2E633C002CAD3B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		742A60E51E2E633C002CAD3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		742A60E71E2E633C002CAD3B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		742A60E81E2E633C002CAD3B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		742A60EB1E2E633D002CAD3B /* StreamerAlpha.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StreamerAlpha.xcdatamodel; sourceTree = "<group>"; };
+		742A60EB1E2E633D002CAD3B /* Streamer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Streamer.xcdatamodel; sourceTree = "<group>"; };
 		742A60ED1E2E633D002CAD3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		742A60F01E2E633D002CAD3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		742A60F21E2E633D002CAD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		742A60D51E2E633C002CAD3B = {
 			isa = PBXGroup;
 			children = (
-				742A60E01E2E633C002CAD3B /* StreamerAlpha */,
+				742A60E01E2E633C002CAD3B /* Streamer */,
 				742A60DF1E2E633C002CAD3B /* Products */,
 				74282D4C1E364CCE00DA923F /* Frameworks */,
 			);
@@ -83,12 +83,12 @@
 		742A60DF1E2E633C002CAD3B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				742A60DE1E2E633C002CAD3B /* StreamerAlpha.app */,
+				742A60DE1E2E633C002CAD3B /* Streamer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		742A60E01E2E633C002CAD3B /* StreamerAlpha */ = {
+		742A60E01E2E633C002CAD3B /* Streamer */ = {
 			isa = PBXGroup;
 			children = (
 				742A60E11E2E633C002CAD3B /* AppDelegate.h */,
@@ -97,7 +97,7 @@
 				742A60ED1E2E633D002CAD3B /* Assets.xcassets */,
 				742A60EF1E2E633D002CAD3B /* Main.storyboard */,
 				742A60F21E2E633D002CAD3B /* Info.plist */,
-				742A60EA1E2E633D002CAD3B /* StreamerAlpha.xcdatamodeld */,
+				742A60EA1E2E633D002CAD3B /* Streamer.xcdatamodeld */,
 				742A60E41E2E633C002CAD3B /* Supporting Files */,
 				74CBB23A1E410C85002C0DFB /* NSString+Random.h */,
 				74CBB23B1E410C85002C0DFB /* NSString+Random.m */,
@@ -106,6 +106,7 @@
 				74A78BC41E5730AC00856C2D /* Channel.h */,
 				74A78BC51E5730AC00856C2D /* Channel.m */,
 			);
+			name = Streamer;
 			path = StreamerAlpha;
 			sourceTree = "<group>";
 		};
@@ -137,9 +138,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		742A60DD1E2E633C002CAD3B /* StreamerAlpha */ = {
+		742A60DD1E2E633C002CAD3B /* Streamer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 742A60F51E2E633D002CAD3B /* Build configuration list for PBXNativeTarget "StreamerAlpha" */;
+			buildConfigurationList = 742A60F51E2E633D002CAD3B /* Build configuration list for PBXNativeTarget "Streamer" */;
 			buildPhases = (
 				742A60DA1E2E633C002CAD3B /* Sources */,
 				742A60DB1E2E633C002CAD3B /* Frameworks */,
@@ -149,9 +150,9 @@
 			);
 			dependencies = (
 			);
-			name = StreamerAlpha;
+			name = Streamer;
 			productName = StreamerAlpha;
-			productReference = 742A60DE1E2E633C002CAD3B /* StreamerAlpha.app */;
+			productReference = 742A60DE1E2E633C002CAD3B /* Streamer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -170,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 742A60D91E2E633C002CAD3B /* Build configuration list for PBXProject "StreamerAlpha" */;
+			buildConfigurationList = 742A60D91E2E633C002CAD3B /* Build configuration list for PBXProject "Streamer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -183,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				742A60DD1E2E633C002CAD3B /* StreamerAlpha */,
+				742A60DD1E2E633C002CAD3B /* Streamer */,
 			);
 		};
 /* End PBXProject section */
@@ -215,7 +216,7 @@
 				743FEA8A1E5B738600204B85 /* ImageValueTransformer.m in Sources */,
 				74F202B11E4A84F6000D93F4 /* ChatViewController.m in Sources */,
 				74A78BC61E5730AC00856C2D /* Channel.m in Sources */,
-				742A60EC1E2E633D002CAD3B /* StreamerAlpha.xcdatamodeld in Sources */,
+				742A60EC1E2E633D002CAD3B /* Streamer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +350,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		742A60D91E2E633C002CAD3B /* Build configuration list for PBXProject "StreamerAlpha" */ = {
+		742A60D91E2E633C002CAD3B /* Build configuration list for PBXProject "Streamer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				742A60F31E2E633D002CAD3B /* Debug */,
@@ -358,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		742A60F51E2E633D002CAD3B /* Build configuration list for PBXNativeTarget "StreamerAlpha" */ = {
+		742A60F51E2E633D002CAD3B /* Build configuration list for PBXNativeTarget "Streamer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				742A60F61E2E633D002CAD3B /* Debug */,
@@ -370,13 +371,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		742A60EA1E2E633D002CAD3B /* StreamerAlpha.xcdatamodeld */ = {
+		742A60EA1E2E633D002CAD3B /* Streamer.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				742A60EB1E2E633D002CAD3B /* StreamerAlpha.xcdatamodel */,
+				742A60EB1E2E633D002CAD3B /* Streamer.xcdatamodel */,
 			);
-			currentVersion = 742A60EB1E2E633D002CAD3B /* StreamerAlpha.xcdatamodel */;
-			path = StreamerAlpha.xcdatamodeld;
+			currentVersion = 742A60EB1E2E633D002CAD3B /* Streamer.xcdatamodel */;
+			path = Streamer.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

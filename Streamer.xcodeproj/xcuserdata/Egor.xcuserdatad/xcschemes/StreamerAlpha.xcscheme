@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "742A60DD1E2E633C002CAD3B"
-               BuildableName = "StreamerAlpha.app"
-               BlueprintName = "StreamerAlpha"
-               ReferencedContainer = "container:StreamerAlpha.xcodeproj">
+               BuildableName = "Streamer.app"
+               BlueprintName = "Streamer"
+               ReferencedContainer = "container:Streamer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "742A60DD1E2E633C002CAD3B"
-            BuildableName = "StreamerAlpha.app"
-            BlueprintName = "StreamerAlpha"
-            ReferencedContainer = "container:StreamerAlpha.xcodeproj">
+            BuildableName = "Streamer.app"
+            BlueprintName = "Streamer"
+            ReferencedContainer = "container:Streamer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "742A60DD1E2E633C002CAD3B"
-            BuildableName = "StreamerAlpha.app"
-            BlueprintName = "StreamerAlpha"
-            ReferencedContainer = "container:StreamerAlpha.xcodeproj">
+            BuildableName = "Streamer.app"
+            BlueprintName = "Streamer"
+            ReferencedContainer = "container:Streamer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "742A60DD1E2E633C002CAD3B"
-            BuildableName = "StreamerAlpha.app"
-            BlueprintName = "StreamerAlpha"
-            ReferencedContainer = "container:StreamerAlpha.xcodeproj">
+            BuildableName = "Streamer.app"
+            BlueprintName = "Streamer"
+            ReferencedContainer = "container:Streamer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
