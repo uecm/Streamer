@@ -114,7 +114,7 @@
     [self getJsonResponse:channel success:^(NSDictionary *response) {
         [self performSelectorOnMainThread:@selector(checkIfOnlineByResponse:) withObject:response waitUntilDone:true];
     } failure:^(NSError *error) {
-        // error handling here ...
+        // error handling here...
         NSLog(@"failure");
     }];
 }
