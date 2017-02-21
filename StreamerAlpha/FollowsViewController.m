@@ -85,9 +85,9 @@
     //NSLog(@"Array controller content: %@", arrayController.content);
 }
 
-- (void)tableViewSelectionDidChange:(NSNotification *)notification;{
+- (void)tableViewSelectionDidChange:(NSNotification *)notification{
     
-    NSLog(@"here %ld, %@", [[notification object] selectedRow], [[arrayController arrangedObjects][[[notification object] selectedRow]] valueForKey:@"name"]);
+    NSLog(@"Selected row: %ld, %@", [[notification object] selectedRow], [[arrayController arrangedObjects][[[notification object] selectedRow]] valueForKey:@"name"]);
 }
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
