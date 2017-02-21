@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ViewController refreshView]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WebViewController saveUserWithToken:andName:]:WebViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WebViewController URLwithAuthenticationInfo]:WebViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FollowsViewController listOfFollowsForUser:]:FollowsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "jsonFollows">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate handleURLEvent:withReplyEvent:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[url absoluteString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__37-[ViewController channelNameEntered:]_block_invoke:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[stream objectAtIndex:0];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[WebViewController handleURLEvent:withReplyEvent:]:WebViewController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
