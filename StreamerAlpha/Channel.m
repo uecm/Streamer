@@ -16,6 +16,7 @@
 @synthesize status;
 @synthesize name;
 @synthesize game;
+@synthesize isLive;
 
 -(instancetype)init{
     if (self = [super init]) {

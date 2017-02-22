@@ -125,7 +125,7 @@
     
     NSString *URL = [NSString stringWithFormat:@"twitch.tv/%@",currentChannel];
     NSString *OAuthToken = [NSString stringWithFormat:@"--twitch-oauth-token=%@",user.oauthToken];
-    [playTask setArguments:@[OAuthToken, URL, @"best"]];
+    [playTask setArguments:@[OAuthToken, URL, @"720p60"]];
     [playTask launch];
     [playTask resume];
     //[playTask waitUntilExit];

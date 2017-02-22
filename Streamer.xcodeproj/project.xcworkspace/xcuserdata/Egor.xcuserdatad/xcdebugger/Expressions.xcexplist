@@ -3,18 +3,13 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ViewController refreshView]:ViewController.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "user.name">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "-[WebViewController handleURLEvent:withReplyEvent:]:WebViewController.m">
       </ContextState>
       <ContextState
-         contextName = "-[WebViewController saveUserWithToken:andName:]:WebViewController.m">
+         contextName = "-[FollowsViewController updateView]:FollowsViewController.m">
          <PersistentStrings>
             <PersistentString
-               value = "user.name">
+               value = "_tableView.numberOfRows">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -30,12 +25,7 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[AppDelegate handleURLEvent:withReplyEvent:]:AppDelegate.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "[url absoluteString]">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "__55-[FollowsViewController determineCurrentlyLiveChannels]_block_invoke:FollowsViewController.m">
       </ContextState>
       <ContextState
          contextName = "__37-[ViewController channelNameEntered:]_block_invoke:ViewController.m">
@@ -46,7 +36,37 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[WebViewController handleURLEvent:withReplyEvent:]:WebViewController.m">
+         contextName = "-[WebViewController saveUserWithToken:andName:]:WebViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ViewController refreshView]:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "user.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[FollowsViewController tableView:didAddRowView:forRow:]:FollowsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate handleURLEvent:withReplyEvent:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[url absoluteString]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__46-[FollowsViewController listOfFollowsForUser:]_block_invoke:FollowsViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[FollowsViewController highlightLiveChannelRows]:FollowsViewController.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

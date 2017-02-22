@@ -11,6 +11,5 @@
 @interface FollowsViewController : NSViewController
 
 @property (weak) IBOutlet NSTableView *tableView;
-@property (strong) NSMutableArray *follows;
 
 @end

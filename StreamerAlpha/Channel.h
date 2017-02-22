@@ -10,12 +10,13 @@
 
 @interface Channel : NSObject
 
-@property (nonatomic) int16_t channelID;
+@property (nonatomic) long long channelID;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *urlString;
 @property (nonatomic, strong) NSString *logo;
 @property (nonatomic, strong) NSString *game;
 @property (nonatomic, strong) NSString *status;
+@property BOOL isLive;
 
 
 
