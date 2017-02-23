@@ -14,7 +14,7 @@
     
     IBOutlet NSArrayController *arrayController;
     NSMutableArray *follows;
-    NSMutableArray *liveFollows;
+    NSArray *liveFollows;
 }
 
 @end
@@ -118,13 +118,28 @@
     [dataTask resume];
 }
 
+-(NSArray*) liveFollowingChannels{
+    
+    NSMutableArray *liveChannels = [[NSMutableArray alloc] init];
+    
+    NSArray *arrangedChannels = [arrayController arrangedObjects];
+    
+    for (int i = 0; i < arrangedChannels.count; i++) {
+        Channel *c = arrangedChannels[i];
+        if (c.isLive) {
+            [liveChannels addObject:[NSNumber numberWithInt:i]];
+        }
+    }
+    return liveChannels;
+}
+
 #pragma mark - View handling
 
 -(void) updateView{
     [arrayController setContent:follows];
     [arrayController rearrangeObjects];
     [_tableView reloadData];
-    [self highlightLiveChannelRows];
+    liveFollows = [self liveFollowingChannels];
     //NSLog(@"Array controller content: %@", arrayController.content);
 }
 
@@ -138,19 +153,14 @@
     return 70.0f;
 }
 
--(void) highlightLiveChannelRows{
-    NSArray *arrangedChannels = [arrayController arrangedObjects];
-    
-    for (int i = 0; i < arrangedChannels.count; i++) {
-        Channel *channel = [arrangedChannels objectAtIndex:i];
-        if (channel.isLive) {
-            
-            NSTableRowView *row = [_tableView rowViewAtRow:i makeIfNecessary:true];
-            CIColor *color = [CIColor colorWithRed:0.33 green:0.86 blue:0.08 alpha:0.7];
-            [row setBackgroundColor:[NSColor colorWithCIColor:color]];
-            
-        }
+-(void)tableView:(NSTableView *)tableView didAddRowView:(NSTableRowView *)rowView forRow:(NSInteger)row{
+    if ([liveFollows containsObject:[NSNumber numberWithInteger:row]]) {
+        CIColor *color = [CIColor colorWithRed:0.33 green:0.86 blue:0.08 alpha:0.7];
+        [rowView setBackgroundColor:[NSColor colorWithCIColor:color]];
     }
 }
+
+
+
 
 @end

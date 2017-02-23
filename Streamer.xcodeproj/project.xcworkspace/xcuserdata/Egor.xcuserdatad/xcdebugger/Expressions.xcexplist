@@ -67,6 +67,11 @@
       </ContextState>
       <ContextState
          contextName = "-[FollowsViewController highlightLiveChannelRows]:FollowsViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "arrangedChannels.count">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>
