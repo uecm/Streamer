@@ -10,11 +10,10 @@
 #import "User.h"
 #import "Channel.h"
 
-@interface FollowsViewController () <NSTableViewDelegate> {
+@interface FollowsViewController () <NSTableViewDelegate, NSTableViewDataSource> {
     
     IBOutlet NSArrayController *arrayController;
     NSMutableArray *follows;
-    NSArray *liveFollows;
     NSTableRowView *selectedRowView;
     __weak IBOutlet NSTextField *loadingLabel;
     __weak IBOutlet NSProgressIndicator *progressIndicator;
@@ -32,7 +31,9 @@
     // Do view setup here.
     
     [_tableView.headerView setAlphaValue:0.8f];
-    
+
+    NSSortDescriptor *defaultSort = [NSSortDescriptor sortDescriptorWithKey:@"isLive" ascending:false selector:@selector(compare:)];
+    [arrayController setSortDescriptors:@[defaultSort]];
     
 }
 
@@ -125,21 +126,6 @@
     [dataTask resume];
 }
 
--(NSArray*) liveFollowingChannels{
-    
-    NSMutableArray *liveChannels = [[NSMutableArray alloc] init];
-    
-    NSArray *arrangedChannels = [arrayController arrangedObjects];
-    
-    for (int i = 0; i < arrangedChannels.count; i++) {
-        Channel *c = arrangedChannels[i];
-        if (c.isLive) {
-            [liveChannels addObject:[NSNumber numberWithInt:i]];
-        }
-    }
-    return liveChannels;
-}
-
 #pragma mark - View handling
 
 -(void) updateView{
@@ -152,7 +138,6 @@
     [arrayController setContent:follows];
     [arrayController rearrangeObjects];
     [_tableView reloadData];
-    liveFollows = [self liveFollowingChannels];
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification{
@@ -186,6 +171,11 @@
     }
 }
 
+-(void)tableView:(NSTableView *)tableView sortDescriptorsDidChange:(NSArray<NSSortDescriptor *> *)oldDescriptors{
+    [arrayController setSortDescriptors:_tableView.sortDescriptors];
+    [arrayController rearrangeObjects];
+    [_tableView reloadData];
+}
 
 
 

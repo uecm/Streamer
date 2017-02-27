@@ -825,7 +825,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="none" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="60" rowSizeStyle="automatic" headerView="dqb-xo-4UO" viewBased="YES" id="NAR-9N-MtP">
-                                            <rect key="frame" x="0.0" y="0.0" width="480" height="239"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="440" height="239"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
@@ -913,7 +913,7 @@
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
-                                                <tableColumn identifier="statusIdentifier" width="121" minWidth="40" maxWidth="1000" id="RST-j5-w6R">
+                                                <tableColumn identifier="statusIdentifier" width="81" minWidth="40" maxWidth="1000" id="RST-j5-w6R">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Status">
                                                         <font key="font" metaFont="smallSystem"/>
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -924,14 +924,15 @@
                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="deviceWhite"/>
                                                     </textFieldCell>
+                                                    <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="isLive" ascending="NO"/>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="kpF-xb-7w1">
-                                                            <rect key="frame" x="357" y="1" width="121" height="60"/>
+                                                            <rect key="frame" x="357" y="1" width="81" height="60"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cm-Hv-q47">
-                                                                    <rect key="frame" x="2" y="17" width="117" height="25"/>
+                                                                    <rect key="frame" x="2" y="17" width="77" height="25"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="25" id="anw-yZ-Imz"/>
                                                                     </constraints>
@@ -963,6 +964,7 @@
                                             </tableColumns>
                                             <connections>
                                                 <binding destination="TTU-MC-g5c" name="content" keyPath="arrangedObjects" id="NYm-B1-5mb"/>
+                                                <outlet property="dataSource" destination="xnh-7Y-pOk" id="jdi-4l-mV0"/>
                                                 <outlet property="delegate" destination="xnh-7Y-pOk" id="EOo-XJ-lMM"/>
                                             </connections>
                                         </tableView>
@@ -977,7 +979,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <tableHeaderView key="headerView" id="dqb-xo-4UO">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="23"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="440" height="23"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableHeaderView>
                             </scrollView>
