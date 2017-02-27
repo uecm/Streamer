@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
+            timestampString = "509924417.065403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
+            timestampString = "509924417.065403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
+            timestampString = "509924417.065403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
+            timestampString = "509924417.065403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "90"
@@ -218,28 +218,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
+            timestampString = "509924417.065403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
             landmarkName = "-determineCurrentlyLiveChannels"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "StreamerAlpha/FollowsViewController.m"
-            timestampString = "509922209.554151"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "-liveFollowingChannels"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

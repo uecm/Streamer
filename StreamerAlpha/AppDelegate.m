@@ -36,7 +36,7 @@
 - (NSURL *)applicationDocumentsDirectory {
     // The directory the application uses to store the Core Data store file. This code uses a directory named "sesh.StreamerAlpha" in the user's Application Support directory.
     NSURL *appSupportURL = [[[NSFileManager defaultManager] URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
-    return [appSupportURL URLByAppendingPathComponent:@"sesh.StreamerAlpha"];
+    return [appSupportURL URLByAppendingPathComponent:@"sesh.Streamer"];
 }
 
 - (NSManagedObjectModel *)managedObjectModel {
@@ -45,7 +45,7 @@
         return _managedObjectModel;
     }
     
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"StreamerAlpha" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Streamer" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -76,7 +76,7 @@
     
     if (!shouldFail && !error) {
         NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"StreamerAlpha.storedata"];
+        NSURL *url = [applicationDocumentsDirectory URLByAppendingPathComponent:@"Streamer.storedata"];
         if (![coordinator addPersistentStoreWithType:NSXMLStoreType configuration:nil URL:url options:nil error:&error]) {
             // Replace this implementation with code to handle the error appropriately.
              
