@@ -16,7 +16,6 @@
 		742A60EE1E2E633D002CAD3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 742A60ED1E2E633D002CAD3B /* Assets.xcassets */; };
 		742A60F11E2E633D002CAD3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 742A60EF1E2E633D002CAD3B /* Main.storyboard */; };
 		743FEA8A1E5B738600204B85 /* ImageValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 743FEA891E5B738600204B85 /* ImageValueTransformer.m */; };
-		743FEA8C1E5C789400204B85 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 743FEA8B1E5C789400204B85 /* README.md */; };
 		74411F3E1E64B2BD00F1707E /* IsLiveValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74411F3D1E64B2BD00F1707E /* IsLiveValueTransformer.m */; };
 		74A78BC61E5730AC00856C2D /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A78BC51E5730AC00856C2D /* Channel.m */; };
 		74A78BCA1E5734DD00856C2D /* FollowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A78BC91E5734DD00856C2D /* FollowsViewController.m */; };
@@ -41,7 +40,6 @@
 		742A60F21E2E633D002CAD3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743FEA881E5B738600204B85 /* ImageValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageValueTransformer.h; sourceTree = "<group>"; };
 		743FEA891E5B738600204B85 /* ImageValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageValueTransformer.m; sourceTree = "<group>"; };
-		743FEA8B1E5C789400204B85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		74411F3C1E64B2BD00F1707E /* IsLiveValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsLiveValueTransformer.h; sourceTree = "<group>"; };
 		74411F3D1E64B2BD00F1707E /* IsLiveValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsLiveValueTransformer.m; sourceTree = "<group>"; };
 		74A78BC41E5730AC00856C2D /* Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 		742A60E41E2E633C002CAD3B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				743FEA8B1E5C789400204B85 /* README.md */,
 				742A60E51E2E633C002CAD3B /* main.m */,
 				743FEA881E5B738600204B85 /* ImageValueTransformer.h */,
 				743FEA891E5B738600204B85 /* ImageValueTransformer.m */,
@@ -221,7 +218,6 @@
 				742A60E61E2E633C002CAD3B /* main.m in Sources */,
 				74CBB23C1E410C85002C0DFB /* NSString+Random.m in Sources */,
 				74A78BCA1E5734DD00856C2D /* FollowsViewController.m in Sources */,
-				743FEA8C1E5C789400204B85 /* README.md in Sources */,
 				742A60E31E2E633C002CAD3B /* AppDelegate.m in Sources */,
 				743FEA8A1E5B738600204B85 /* ImageValueTransformer.m in Sources */,
 				74F202B11E4A84F6000D93F4 /* ChatViewController.m in Sources */,
