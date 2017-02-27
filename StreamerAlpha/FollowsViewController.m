@@ -10,11 +10,14 @@
 #import "User.h"
 #import "Channel.h"
 
-@interface FollowsViewController () <NSTableViewDelegate, NSTableViewDataSource>{
+@interface FollowsViewController () <NSTableViewDelegate> {
     
     IBOutlet NSArrayController *arrayController;
     NSMutableArray *follows;
     NSArray *liveFollows;
+    NSTableRowView *selectedRowView;
+    __weak IBOutlet NSTextField *loadingLabel;
+    __weak IBOutlet NSProgressIndicator *progressIndicator;
 }
 
 @end
@@ -24,9 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     follows = [self listOfFollowsForUser:[User fetchedUserFromCoreData]];
-    [_tableView setDelegate:self];
-    
+
+    [progressIndicator startAnimation:0];
     // Do view setup here.
+    
+    [_tableView.headerView setAlphaValue:0.8f];
+    
+    
 }
 
 #pragma mark - Data handling
@@ -136,29 +143,49 @@
 #pragma mark - View handling
 
 -(void) updateView{
+    [progressIndicator stopAnimation:0];
+    [progressIndicator removeFromSuperview];
+    [loadingLabel removeFromSuperview];
+    
+    [_tableView setGridStyleMask:NSTableViewSolidHorizontalGridLineMask];
+
     [arrayController setContent:follows];
     [arrayController rearrangeObjects];
     [_tableView reloadData];
     liveFollows = [self liveFollowingChannels];
-    //NSLog(@"Array controller content: %@", arrayController.content);
 }
 
 - (void)tableViewSelectionDidChange:(NSNotification *)notification{
     
-    NSLog(@"Selected row: %ld, %@", [[notification object] selectedRow], [[arrayController arrangedObjects][[[notification object] selectedRow]] valueForKey:@"name"]);
+    // If previous row is highlighted, "deselect" it.
+    if (selectedRowView) {
+        [selectedRowView setBackgroundColor:[NSColor clearColor]];
+    }
+    // Highlight selected row
+    NSInteger selectedRow = [[notification object] selectedRow];
+    selectedRowView = [(NSTableView*)[notification object] rowViewAtRow:selectedRow makeIfNecessary:false];
+    [selectedRowView setBackgroundColor:[NSColor colorWithRed:0.76 green:0.76 blue:0.76 alpha:0.76]];
 }
 
 -(CGFloat)tableView:(NSTableView *)tableView heightOfRow:(NSInteger)row{
-    
     return 70.0f;
 }
 
 -(void)tableView:(NSTableView *)tableView didAddRowView:(NSTableRowView *)rowView forRow:(NSInteger)row{
-    if ([liveFollows containsObject:[NSNumber numberWithInteger:row]]) {
-        CIColor *color = [CIColor colorWithRed:0.33 green:0.86 blue:0.08 alpha:0.7];
-        [rowView setBackgroundColor:[NSColor colorWithCIColor:color]];
+    // Get status cell from current row to change its text color
+    // Status column has index of 2
+    NSTableCellView *statusCell = [rowView viewAtColumn:2];
+    
+    bool isLive = [(Channel*)[arrayController.arrangedObjects objectAtIndex:row] isLive];
+    if (isLive) {
+        // If channel is online
+        [statusCell.textField setTextColor:[NSColor colorWithRed:0.15 green:0.83 blue:0.07 alpha:1.0]];
+    } else {
+        // If channel is offline
+        [statusCell.textField setTextColor:[NSColor colorWithRed:0.97 green:0.02 blue:0.36 alpha:1.0]];
     }
 }
+
 
 
 

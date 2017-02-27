@@ -11,5 +11,6 @@
 @interface FollowsViewController : NSViewController
 
 @property (weak) IBOutlet NSTableView *tableView;
+@property (weak) IBOutlet NSTableHeaderView *tableHeaderView;
 
 @end

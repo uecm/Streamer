@@ -1,5 +1,5 @@
 //
-//  NSValueTransformer+ImageValueTransformer.m
+//  ImageValueTransformer.m
 //  StreamerAlpha
 //
 //  Created by Egor on 2/20/17.
